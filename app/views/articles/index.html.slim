@@ -1,14 +1,10 @@
 p#notice
   = notice
-h1
-  | Articles
-table
+table.table.table-hover.table-sm
   thead
     tr
       th
-        | Title
-      th
-        | Text
+        | Articles
       th[colspan="3"]
   tbody
     - @articles.each do |article|
@@ -16,12 +12,10 @@ table
         td
           = article.title
         td
-          = article.text
+          = link_to 'Show', article, class: 'btn btn-primary'
         td
-          = link_to 'Show', article
+          = link_to 'Edit', edit_article_path(article), class: 'btn btn-primary'
         td
-          = link_to 'Edit', edit_article_path(article)
-        td
-          = link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }
+          = link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary'
 br
 = link_to 'New Article', new_article_path
