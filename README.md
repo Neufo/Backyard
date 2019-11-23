@@ -5,9 +5,9 @@ Ruby on Rails の学習用に作成したアプリケーションです。
 Backyardディレクトリ直下で以下のコマンドを実行します
 
 ### MacOS
-1. bundle install
-1. bin/rails db:migrate
-1. bin/rails s
+1. `bundle install`
+1. `bin/rails db:migrate`
+1. `bin/rails s`
 
 ### Ubuntu
 1. `sudo apt install libsqlite3-dev nodejs`
