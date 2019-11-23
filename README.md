@@ -20,4 +20,5 @@ Backyardディレクトリ直下で以下のコマンドを実行します
 ## 動作環境
 * Ruby version 2.5.1p57
 * Ruby on Rails version 5.2.1
+* bundler version 1.17.3
 * Node.js version 13.0.1
